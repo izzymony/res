@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<nav>
+    <label>
+        <input type="checkbox"  id="check">
+        <label for="check" class="checkbtn">
+           <img src="img/icons8-menu-24.png" alt="" class="menus">
+       
+        </label>
+
+
+        <div class="logo">
+<img src="img/logo.png" alt="">
+            Expera
+        </div>
+
+       <a href="cart.html"><div class="cart"><img src="img/icons8-shopping-cart-30.png" alt="" width="30" class="cart-quanntity">
+            <div class="cart-update">
+               <div class="sp" id="cart-count">0</div>
+            </div>
+        </div>
+    </a> 
+        <ul>
+            <div class="ul-wrapper">
+            <span id="menu-close" class="menu-close">&times;</span>
+            
+            <li><a href="index.html"><span>Home</span></a></li>  
+            <li><a href="Download.html">Download Pera</a></li>  
+            <li><a href=".html">Pera Explorer</a></li>  
+            <li><a href="Asa-verification.html">ASA Verification</a></li>  
+            <li><a href="">QR Generator</a></li>  
+            <li><a href="">Get Support</a></li> 
+            <li><a href=""><div class="get">
+                Get Started
+            </div></a> </li>
+            <li><a href=""><div class="get-explorer">
+                
+            </div></a> </li>
+        </div>
+            </ul>
+
+         
+</nav> 
+<body>
+    <main>
+        <h1>Your Cart</h1>
+       
+        <div id="cart-container"></div>
+       
+        <div class="total">
+            <span>Total: &#8358; <span id="total-price">0</span></span>
+        </div>
+        <button onclick="clearCart()" class="">Clear Cart</button>
+    </main>
+    <script src="cart.js"></script>
+</body>
+</html>
+
+

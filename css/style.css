@@ -1,0 +1,429 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color:#f5cf45;
+   position: fixed;
+   padding: 1.5rem;
+    width: 100%;
+    padding-top: 1rem;
+  }
+  body{
+    background-color:white;
+    position: absolute;
+    background-color: #FFF3DD;
+  }
+
+  .menus{
+    float: right;
+    filter: invert(0);
+    margin-top: 0.5rem;
+   
+    padding: 0.55rem;
+    border-radius: 0.7rem;
+    width: fit-content;
+  }
+ 
+  nav ul li a{
+    color:black; 
+    gap: 25px;
+   
+    font-family: 'Epilogue', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    }
+    .logo{
+        font-family:"AkkuratMonoRegular",sans-serif;
+        font-weight: 800;
+        font-size: 60px;
+        margin-top: 0.7rem;
+    }
+    #checkbtn{
+        font-size: 20px;
+        float: right;
+        margin-top: 2rem;
+        height: fit-content;
+        width: fit-content;
+        margin-right: 90px;
+        cursor: pointer;
+        display:none;
+        align-self:center;
+        color: white;
+    }
+   
+   
+   
+    #check{
+        display:none;
+    }
+
+
+    .menu-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 35px;
+        color: black;
+        cursor: pointer;
+        float: right;
+        background-color:white;
+        box-shadow: 0 0 2px lightgray;
+        padding: 0.4rem;
+        height: fit-content;
+        margin-top: 1rem;
+        border-radius: 0.7rem;
+        width: fit-content;
+    }
+
+    #logo{
+        object-fit: cover;
+        display: none;
+        font-size: 50px;
+        margin-top: 1rem;
+    }
+    .logo{
+        font-size: 25px;
+        margin-top: 0.4rem;
+    }
+
+    .background{
+     
+       max-width: 100%;
+       height: 100vh;
+        margin-top: 5.5rem;
+       object-fit:cover;
+      
+    }
+
+    .hero{
+       margin-top:-30rem;
+        text-align: center;
+       font-weight: 900;
+       font-size: 55px;
+      color: #fff3dd;
+    }
+    button{
+        padding: .8rem;
+        font-size: 23px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #664D36;
+        border: none;
+        border-radius: 2rem;
+        color: #fff3dd;
+        margin-top: 2rem;
+    }
+    .btn-cta{
+       align-self: center;
+       justify-content: center;
+       text-align: center;
+    }
+        .food-container{
+            margin-top: rem;
+           
+           
+        }
+    .container{
+        background-color:  #664D36;
+        width: 90%;
+        margin: auto;
+        border-radius: 0.5rem;
+        padding: 3rem;
+        margin-top: 3rem;
+    }
+
+    .img{
+        width: 100%;
+    }
+
+    .cart-quanntity{
+        float: right;
+        margin-top: -1.4rem;
+        object-fit: contain;
+    }
+
+    .cart{
+        display: flex;
+        float: right;
+        margin-top: -.5rem;
+        margin-right: 1rem;
+    }
+
+    .cart-update{
+        background-color: white;
+        width: fit-content;
+        width: 1.5rem;
+        height: 1.5rem;
+        text-align: center;
+        padding-top: 0.05rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        float: right;
+        border-radius: 50%;
+        margin-top: -1rem;
+
+    }
+
+    .food-container{
+     
+    }
+
+    h1{
+        font-family:Vchenriettacondensed, sans-serif ;
+        font-weight: 800;
+        font-size: 45px;
+        margin-top: 26rem;
+        color:#f06b32;
+        text-align: center;
+    }
+
+    .btn-menu{
+      display: grid;
+      place-items: center;
+    
+    }
+    .menu-btn{
+        background-color: #FFF3DD;
+        color: #f06b32;
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    .menu-btn:hover{
+        background-color:#f06b32;
+        transition: all 0.4s ease-in-out;
+        color: white;
+        border:  1px solid #FFF3DD ;
+    }
+
+    .text-ref{
+        text-align: center;
+        margin-top: 4rem;
+    }
+    p{
+        font-family: Karla, sans-serif;
+        font-size: 19px;
+        color: #664D36;
+        margin-top: 0.5rem;
+    }
+    .imbg{
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    h2{
+        font-family:Vchenriettacondensed, sans-serif ;
+        font-weight: 800;
+        font-size: 40px;
+        margin-top: 4rem;
+        color:#f06b32;
+        text-align: center;
+    }
+    .cards{
+       
+        padding: 2rem;
+    }
+    .foodimg{
+        border-radius: 2rem;
+    }
+    .head-flex{
+        color: #f06b32;
+        font-family:Vchenriettacondensed, sans-serif ;
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .p1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: 600;
+        color: #664D36;
+    }
+    .leaf{
+        margin-top: rem;
+    }
+    .full{
+        text-align: center;
+        padding: 2rem;
+    }
+    .full-menu{
+        width: 25rem;
+        padding: 1rem;
+        font-weight: 700;
+        font-size: 35px;
+    }
+
+    #imbgs{
+        width: 100%;
+    }
+
+    .services{
+        background-color: #664D36;
+        width: 100%;
+        padding: 2rem;
+    }
+    .Quality-food{
+        background-color: #FFF3DD;
+        text-align: center;
+        padding: 1rem;
+        max-width: 80%;
+        margin: auto;
+        border-radius: 1rem;
+    }
+    .h1{
+        color: #664D36;
+        font-size: 30px;
+        font-weight: 700;
+       font-size: 60px;
+    font-family: "Work",sans-serif;
+    margin-top: 8rem;
+    }
+    .p2{
+        color: #664D36;
+        font-size: 33px;
+        font-weight: 600;
+        margin-top: 2rem;
+        font-family: "Inconsolata", monospace;
+        font-optical-sizing: auto;
+      
+        font-variation-settings:
+          "wdth" 100;
+        
+    }
+    .footer{
+        background-color:#f5cf45;
+        margin-top: 7rem;
+        padding: 1rem;
+    }
+    ol ,.link-text,a{
+        font-size: 25px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       color: #664D36;
+       text-decoration: none;
+       margin-top: 1rem;
+    }
+    .box{
+      
+     
+    }
+    .fa-close{
+        float: right;
+        margin-right: 3rem;
+        margin-top: 1rem;
+    }
+    .footer-container{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin: auto;
+        gap: 2rem;
+    }
+    .box-header{
+        font-size: 30px;
+        color: #664D36;
+        font-weight: 800;
+        font-family: "Work",sans-serif;
+    }
+    @media (max-width:900px){
+        .checkbtn{
+            display: block;
+            
+           
+        }
+       
+        .flex-box{
+            margin-top: 4rem;
+        }
+        .box-container{
+            margin-top: 2rem;
+        }
+        .center-text{
+            text-align: center;
+        }
+
+     
+       
+    ul{
+    
+        
+    /*  position:absolute;
+     width: 100%;
+     height: 100vh;
+     background:black;
+     
+     text-align: right;
+    
+     transition:  all 0.5s; */
+    }
+    
+    ul{
+        position:absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(46, 45, 45);
+        top: 0;
+        left: 0;
+        
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+         text-align:start;
+         background-color:#FFF3DD;
+         font-family: 'Epilogue', sans-serif;
+         transition: all 0.5s ;
+           
+        }
+
+        ul:hover{
+            transform: translateY(-100%); 
+         
+        }
+    
+    
+        ul
+    .span{
+        margin-top: 3rem;
+        font-size: 12px;
+        color: grey;
+        font-weight: 700;
+        margin-left: 3rem;
+    }
+    
+    
+    
+    nav ul li a{
+        display:block;
+        margin: 35px 0px;
+        line-height: 1px;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        list-style:none;
+        margin-top: 4rem;
+       
+        text-align: center;
+    }
+    
+    li{
+        list-style: none;
+    }
+    
+    .btn{
+        width: 100%;
+        display: flex;
+    }
+    ul li a{
+        font-size:16px;
+        
+    }
+    
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+    }
+    
+    
+    
+    
