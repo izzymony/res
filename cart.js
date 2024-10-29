@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded" , () =>{
     const cart = JSON.parse(localStorage.getItem('cart') )|| [
+   
 ];
     const cartContainer = document.getElementById("cart-container");
     const totalPriceElement = document.getElementById("total-price");
@@ -10,10 +11,11 @@ document.addEventListener("DOMContentLoaded" , () =>{
     cart.forEach(item =>{
         const itemElement = document.createElement("div");
         itemElement.className = "cart-item";
-        itemElement.innerHTML = `
-          
-                 <img src="${item.imageSrc}" alt="${item.name}" class="cart-item-image">
+       
+        itemElement.innerHTML = `   
+         <img src="${item.imageSrc}" alt="" class="cart-item-image" id="product-${item.id}" >
               <div class="cart-item-details">
+               
                               <span class="name">${item.name}</span>
 
         <div class="quantity">Quantity: ${item.quantity}</div>
@@ -52,8 +54,21 @@ function removeItem(id){
     location.reload();
 }
 
+function checkout() {
+  // Check if the cart has items
+  const messageElement = document.getElementById("checkout-message");
+  messageElement.style.display = "block";
+  
+  // Hide the message after 5 seconds
+  setTimeout(() => {
+      messageElement.style.display = "none";
+  }, 5000); 
+}
+   
 function clearCart(){
     localStorage.removeItem('cart');
     location.reload();
 }
+
+
 

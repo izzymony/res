@@ -20,7 +20,9 @@ function updateCart(index){
         id: index,
         name: document.querySelectorAll (".h1")[index].textContent,
         price: parseInt(document.querySelectorAll(".price")[index].textContent.replace(/[^\d]/g, '')),
-        quantity: parseInt(document.getElementById(`counter-value-${index}`).textContent)
+        quantity: parseInt(document.getElementById(`counter-value-${index}`).textContent),
+        imageSrc: document.querySelectorAll(".food-img")[index].src 
+      
     };
 
     cart = cart.filter(product => product.id !== item.id);
@@ -34,8 +36,14 @@ function updateCart(index){
     cartCount.textContent = cart.reduce((acc, item) => acc + item.quantity, 0);
 }
 
+
+
+
+
 function addToCart(id, price, name, imageSrc){
-    const existingItemIndex = cart.findIndex(item => item.id === id);
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+const existingItemIndex = cart.findIndex(item => item.id === id); 
+
     if (existingItemIndex !== -1){
         cart[existingItemIndex].quantity +=1;
     }
