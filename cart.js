@@ -13,8 +13,10 @@ document.addEventListener("DOMContentLoaded" , () =>{
         itemElement.className = "cart-item";
        
         itemElement.innerHTML = `   
+      
          <img src="${item.imageSrc}" alt="" class="cart-item-image" id="product-${item.id}" >
               <div class="cart-item-details">
+              <div class="flex">
                
                               <span class="name">${item.name}</span>
 
@@ -22,6 +24,8 @@ document.addEventListener("DOMContentLoaded" , () =>{
         <div class="price">Price: &#8358; ${item.price * item.quantity}</div>
            <button onclick="removeItem(${item.id})" class="button">Delete</button>
            </div>
+           </div>
+           
         `; 
         cartContainer.appendChild(itemElement);
         totalPrice += item.price * item.quantity;

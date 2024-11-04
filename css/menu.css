@@ -12,7 +12,7 @@ body{
   nav{
     background-color:#f5cf45;
    position: fixed;
-   padding: .5rem;
+   padding: 1rem;
     width: 100%;
     top: 0;
   }
@@ -98,11 +98,10 @@ body{
         color: black;
         cursor: pointer;
         float: right;
-        background-color:white;
-        box-shadow: 0 0 2px lightgray;
+     
         padding: 0.4rem;
         height: fit-content;
-        margin-top: 1rem;
+        margin-top: -1rem;
         border-radius: 0.7rem;
         width: fit-content;
     }
@@ -168,36 +167,128 @@ body{
         font-size: 23px;
     }
 
-    .footer{
-        background-color:#f5cf45;
-        margin-top: 7rem;
-        padding: 1rem;
+    .footer-container{
+      
        
-    }
-    ol ,.link-text,a{
-        font-size: 18px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-       color: #664D36;
-       text-decoration: none;
-       margin-top: 1rem;
-    }
-    .box{
-     
-    }
-    
-    
-        .footer-container{
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 1rem;
+       row-gap: 1rem;
+      
+   }
+   .footer{
+       background-color:#f5cf45;
+       margin-top: 7rem;
+       padding: 1rem;
+      
+   }
+   ol ,.link-text,a{
+       font-size: 18px;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: #664D36;
+      text-decoration: none;
+      margin-top: 1rem;
+   }
+   .box-header{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: #664D36;
+   }
+   
+   
+       .footer-container{
+         
           
-           
-             display: grid;
+            display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: rem;
+          
+       }
+
+       .footer-container{
+        display: flex;
+        gap: 3rem;
+        flex-direction: row;
+       
+         }
+         .footer{
+             background-color:#f5cf45;
+             margin-top: 7rem;
+             padding: 1rem;
+            width: 100%;
+         }
+         ol ,.link-text,a{
+             font-size: 17px;
+             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #664D36;
+            text-decoration: none;
+            margin-top: 1rem;
+         }
+         .box-header{
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-size: 15px;
+          font-weight: 700;
+          color: #664D36;
+         }
+         
+         
+
+       @media(width >= 750px){
+        .card-menu-container{
+            display: grid;
+            width: 90%;
+            margin: auto;
             grid-template-columns: 1fr 1fr;
-            gap: rem;
-           
         }
-    
-    
 
+       
+       }
 
+       @media(width >= 999px){
+        .card-menu-container{
+            display: grid;
+            width: 90%;
+            margin: auto;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .menu-close,.menus{
+            display: none;
+        }
+
+        .ul-wrapper{
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: -1.2REM;
+        }
+        .cart{
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-right: -0.03rem;
+            
+        }
+        .box-header{
+            font-size: 30px;
+        }
+        ol{
+            font-size: 26px;
+        } 
+        h2{
+            font-size: 35px;
+        }
+        .footer-container{
+            width: fit-content;
+            margin: auto;
+          
+         }
+       }
+      
+       
     @media (max-width:999px){
         .checkbtn{
             display: block;
